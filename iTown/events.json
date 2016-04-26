@@ -1,0 +1,22 @@
+{
+    "events": [
+               {
+               "title": "San Rocco",
+               "startDate": "2016-09-01",
+               "endDate": "2016-09-01",
+               "description": "Festa di San Rocco a settembre"
+               },
+               {
+               "title": "San Donato",
+               "startDate": "2016-08-07",
+               "endDate": "2016-08-09",
+               "description": "Festa di San Donato ad agosto"
+               },
+               {
+               "title": "Aia in Folk",
+               "startDate": "2016-05-10",
+               "endDate": "2016-05-12",
+               "description": "a cura di Agorart"
+               }
+            ]
+}

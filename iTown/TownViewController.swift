@@ -9,15 +9,31 @@
 import UIKit
 
 class TownViewController: UITableViewController {
+    
+    
+    struct MenuRow {
+        let title : String
+    }
+    
+    var menuList = [MenuRow]()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.menuList = [
+            MenuRow(title: "Notizie"),
+            MenuRow(title: "Comunicati")
+        ]
+        
+        
+        //aggiorna la tabella ricaricando le funzioni
+        self.tableView.reloadData()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +45,27 @@ class TownViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return menuList.count
     }
 
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("TownCell", forIndexPath: indexPath)
+        
+        //ricavo un oggetto Alimento dalla lista in posizione row (il num di riga) e lo conservo
+        let menuRow = self.menuList[indexPath.row]
+        
+        //riempio la cella assegnando ad una label testuale il nome dell'alimento
+        cell.textLabel?.text = menuRow.title
+        // questo accessorio aggiunge il bottone a forma di freccia che punta verso destra (utile per indicare che cliccando la vista si sposta in un altro VC)
+        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

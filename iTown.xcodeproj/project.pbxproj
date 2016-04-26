@@ -14,6 +14,10 @@
 		D225B1D71CCF5E9B00CB731B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D225B1D61CCF5E9B00CB731B /* Assets.xcassets */; };
 		D225B1DA1CCF5E9B00CB731B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D225B1D81CCF5E9B00CB731B /* LaunchScreen.storyboard */; };
 		D2F4DB121CCF5F9D00F3831E /* TownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4DB111CCF5F9D00F3831E /* TownViewController.swift */; };
+		D2F4DB141CCF7EB400F3831E /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4DB131CCF7EB400F3831E /* EventsTableViewController.swift */; };
+		D2F4DB161CCF839400F3831E /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = D2F4DB151CCF839400F3831E /* events.json */; };
+		D2F4DB181CCF864000F3831E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4DB171CCF864000F3831E /* Event.swift */; };
+		D2F4DB1A1CCFA34900F3831E /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4DB191CCFA34900F3831E /* EventDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		D225B1D91CCF5E9B00CB731B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D225B1DB1CCF5E9B00CB731B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2F4DB111CCF5F9D00F3831E /* TownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TownViewController.swift; sourceTree = "<group>"; };
+		D2F4DB131CCF7EB400F3831E /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		D2F4DB151CCF839400F3831E /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		D2F4DB171CCF864000F3831E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D2F4DB191CCFA34900F3831E /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				D225B1D81CCF5E9B00CB731B /* LaunchScreen.storyboard */,
 				D225B1DB1CCF5E9B00CB731B /* Info.plist */,
 				D2F4DB111CCF5F9D00F3831E /* TownViewController.swift */,
+				D2F4DB131CCF7EB400F3831E /* EventsTableViewController.swift */,
+				D2F4DB151CCF839400F3831E /* events.json */,
+				D2F4DB171CCF864000F3831E /* Event.swift */,
+				D2F4DB191CCFA34900F3831E /* EventDetailViewController.swift */,
 			);
 			path = iTown;
 			sourceTree = "<group>";
@@ -128,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F4DB161CCF839400F3831E /* events.json in Resources */,
 				D225B1DA1CCF5E9B00CB731B /* LaunchScreen.storyboard in Resources */,
 				D225B1D71CCF5E9B00CB731B /* Assets.xcassets in Resources */,
 				D225B1D51CCF5E9B00CB731B /* Main.storyboard in Resources */,
@@ -144,6 +157,9 @@
 				D225B1D21CCF5E9B00CB731B /* SecondViewController.swift in Sources */,
 				D225B1CE1CCF5E9B00CB731B /* AppDelegate.swift in Sources */,
 				D2F4DB121CCF5F9D00F3831E /* TownViewController.swift in Sources */,
+				D2F4DB141CCF7EB400F3831E /* EventsTableViewController.swift in Sources */,
+				D2F4DB181CCF864000F3831E /* Event.swift in Sources */,
+				D2F4DB1A1CCFA34900F3831E /* EventDetailViewController.swift in Sources */,
 				D225B1D01CCF5E9B00CB731B /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
