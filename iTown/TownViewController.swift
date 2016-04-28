@@ -66,6 +66,37 @@ class TownViewController: UITableViewController {
         
         return cell
     }
+    
+    //se viene selezionato una riga della tabella attiva il segue per spostarti nella View dei Dettagli
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if(indexPath.row == 0){
+            self.performSegueWithIdentifier("NewsSegue", sender: tableView)
+        }
+        
+        if(indexPath.row == 1){
+            self.performSegueWithIdentifier("PressSegue", sender: tableView)
+        }
+    }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "NewsSegue" {
+            let destinationController = segue.destinationViewController as! NewsTableViewController
+            //let indexPath = self.tableView.indexPathForSelectedRow!
+            //let detailEvent = self.events[indexPath.row]
+            // eventDetailViewController.event = detailEvent
+            destinationController.title = "Notizie"
+        }
+        
+        if segue.identifier == "PressSegue" {
+            let destinationController = segue.destinationViewController as! PressTableViewController
+            //let indexPath = self.tableView.indexPathForSelectedRow!
+            //let detailEvent = self.events[indexPath.row]
+            // eventDetailViewController.event = detailEvent
+            destinationController.title = "Comunicati"
+        }
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.

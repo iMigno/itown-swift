@@ -10,18 +10,10 @@ import Foundation
 
 class Event{
 
-    var title : String
+    var title : String?
     var startDate : NSDate?
     var endDate : NSDate?
     var description : String?
-    
-    
-    init(title: String) {
-        self.title = title
-        self.startDate = NSDate()
-        self.endDate = NSDate()
-        self.description = ""
-    }
     
     init(title: String, startDate: NSDate?, endDate: NSDate?, description: String?) {
         self.title = title

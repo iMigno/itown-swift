@@ -14,15 +14,14 @@ class EventDetailViewController: UIViewController {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelDescription: UILabel!
     
-    var eventTitle : String = ""
-    var eventDescription: String?
+    var event : Event?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelTitle.text = eventTitle
-        labelDescription.text = eventDescription
+        labelTitle.text = self.event!.title
+        labelDescription.text = self.event!.description
 
         // Do any additional setup after loading the view.
     }

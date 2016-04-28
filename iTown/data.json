@@ -1,4 +1,19 @@
 {
+    "news": [
+               {
+               "title": "San Rocco",
+               "description": "Festa di San Rocco a settembre"
+               },
+               {
+               "title": "San Donato",
+               "description": "Festa di San Donato ad agosto"
+               },
+               {
+               "title": "Aia in Folk",
+               "description": "a cura di Agorart"
+               }
+               ],
+    
     "events": [
                {
                "title": "San Rocco",
