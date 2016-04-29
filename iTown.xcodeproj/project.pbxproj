@@ -15,6 +15,10 @@
 		D225B1DA1CCF5E9B00CB731B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D225B1D81CCF5E9B00CB731B /* LaunchScreen.storyboard */; };
 		D255F5411CD26259005CE4E7 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D255F5401CD26259005CE4E7 /* NewsTableViewController.swift */; };
 		D255F5431CD262FB005CE4E7 /* PressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D255F5421CD262FB005CE4E7 /* PressTableViewController.swift */; };
+		D2D2DE1F1CD365B20053BB19 /* JsonSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2DE1E1CD365B20053BB19 /* JsonSingleton.swift */; };
+		D2D2DE211CD3694E0053BB19 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2DE201CD3694E0053BB19 /* SwiftyJSON.swift */; };
+		D2D2DE231CD371A40053BB19 /* GandalfUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2DE221CD371A40053BB19 /* GandalfUtils.swift */; };
+		D2D2DE271CD3B5540053BB19 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D2DE261CD3B5540053BB19 /* News.swift */; };
 		D2F4DB121CCF5F9D00F3831E /* TownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4DB111CCF5F9D00F3831E /* TownViewController.swift */; };
 		D2F4DB141CCF7EB400F3831E /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4DB131CCF7EB400F3831E /* EventsTableViewController.swift */; };
 		D2F4DB161CCF839400F3831E /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D2F4DB151CCF839400F3831E /* data.json */; };
@@ -33,6 +37,10 @@
 		D225B1DB1CCF5E9B00CB731B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D255F5401CD26259005CE4E7 /* NewsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
 		D255F5421CD262FB005CE4E7 /* PressTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressTableViewController.swift; sourceTree = "<group>"; };
+		D2D2DE1E1CD365B20053BB19 /* JsonSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonSingleton.swift; sourceTree = "<group>"; };
+		D2D2DE201CD3694E0053BB19 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		D2D2DE221CD371A40053BB19 /* GandalfUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GandalfUtils.swift; sourceTree = "<group>"; };
+		D2D2DE261CD3B5540053BB19 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		D2F4DB111CCF5F9D00F3831E /* TownViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TownViewController.swift; sourceTree = "<group>"; };
 		D2F4DB131CCF7EB400F3831E /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		D2F4DB151CCF839400F3831E /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
@@ -70,6 +78,7 @@
 		D225B1CC1CCF5E9B00CB731B /* iTown */ = {
 			isa = PBXGroup;
 			children = (
+				D2D2DE201CD3694E0053BB19 /* SwiftyJSON.swift */,
 				D225B1CD1CCF5E9B00CB731B /* AppDelegate.swift */,
 				D225B1CF1CCF5E9B00CB731B /* FirstViewController.swift */,
 				D225B1D11CCF5E9B00CB731B /* SecondViewController.swift */,
@@ -84,6 +93,9 @@
 				D2F4DB191CCFA34900F3831E /* EventDetailViewController.swift */,
 				D255F5401CD26259005CE4E7 /* NewsTableViewController.swift */,
 				D255F5421CD262FB005CE4E7 /* PressTableViewController.swift */,
+				D2D2DE1E1CD365B20053BB19 /* JsonSingleton.swift */,
+				D2D2DE221CD371A40053BB19 /* GandalfUtils.swift */,
+				D2D2DE261CD3B5540053BB19 /* News.swift */,
 			);
 			path = iTown;
 			sourceTree = "<group>";
@@ -163,12 +175,16 @@
 				D225B1D21CCF5E9B00CB731B /* SecondViewController.swift in Sources */,
 				D225B1CE1CCF5E9B00CB731B /* AppDelegate.swift in Sources */,
 				D2F4DB121CCF5F9D00F3831E /* TownViewController.swift in Sources */,
+				D2D2DE231CD371A40053BB19 /* GandalfUtils.swift in Sources */,
+				D2D2DE211CD3694E0053BB19 /* SwiftyJSON.swift in Sources */,
 				D2F4DB141CCF7EB400F3831E /* EventsTableViewController.swift in Sources */,
 				D255F5431CD262FB005CE4E7 /* PressTableViewController.swift in Sources */,
 				D255F5411CD26259005CE4E7 /* NewsTableViewController.swift in Sources */,
 				D2F4DB181CCF864000F3831E /* Event.swift in Sources */,
 				D2F4DB1A1CCFA34900F3831E /* EventDetailViewController.swift in Sources */,
 				D225B1D01CCF5E9B00CB731B /* FirstViewController.swift in Sources */,
+				D2D2DE271CD3B5540053BB19 /* News.swift in Sources */,
+				D2D2DE1F1CD365B20053BB19 /* JsonSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

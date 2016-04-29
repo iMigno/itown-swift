@@ -1,18 +1,16 @@
 //
-//  Event.swift
+//  News.swift
 //  iTown
 //
-//  Created by Alessandro on 26/04/16.
+//  Created by Alessandro on 29/04/16.
 //  Copyright © 2016 Alessandro Mignogna. All rights reserved.
 //
 
 import Foundation
 
-class Event{
-
+class News{
+    
     var title : String?
-    var startDate : NSDate?
-    var endDate : NSDate?
     var description : String?
-
+    
 }

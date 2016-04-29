@@ -1,16 +1,16 @@
 {
     "news": [
                {
-               "title": "San Rocco",
-               "description": "Festa di San Rocco a settembre"
+               "title": "Chiusa la strada A4",
+               "description": "descrizione 1"
                },
                {
-               "title": "San Donato",
-               "description": "Festa di San Donato ad agosto"
+               "title": "Inaugurazione nuova sede",
+               "description": "descrizione 2"
                },
                {
-               "title": "Aia in Folk",
-               "description": "a cura di Agorart"
+               "title": "Maltempo: attenzione agli spostamenti",
+               "description": "descrizione 3"
                }
                ],
     

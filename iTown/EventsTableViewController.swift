@@ -16,21 +16,8 @@ class EventsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        let url = NSBundle.mainBundle().URLForResource("data", withExtension: "json")
-        let data = NSData(contentsOfURL: url!)
-        
-        do {
-            let object = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
-            if let dictionary = object as? [String: AnyObject] {
-                readJSONObject(dictionary)
-            }
-        } catch {
-            // Handle Error
-        }
-        
-        
+        let jsonS : JsonSingleton = JsonSingleton()
+        events = jsonS.getEvents()
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -120,31 +107,6 @@ class EventsTableViewController: UITableViewController {
         }
     }
     
-    
-    func readJSONObject(object: [String: AnyObject]) {
-        
-        guard let jsonEvents = object["events"] as? [[String: AnyObject]] else { return }
-        
-        for json in jsonEvents {
-            let jsonTitle = json["title"] as? String
-            let jsonStartDate = json["startDate"] as? String
-            let jsonEndDate = json["endDate"] as? String
-            let jsonDescription = json["description"] as? String
-            
-            let start = convertDateFromJSON(jsonStartDate!)
-            let end = convertDateFromJSON(jsonEndDate!)
-            
-            let event = Event(title: jsonTitle!, startDate: start, endDate: end, description: jsonDescription)
-            self.events.append(event)
- 
-        }
-    }
-    
-    func convertDateFromJSON(dateString: String) -> NSDate{
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        return dateFormatter.dateFromString( dateString )!
-    }
     
 }
 
